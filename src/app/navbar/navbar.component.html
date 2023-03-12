@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <ul>
+    <li>
+      <a
+        #users
+        routerLink="/"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Kullanıcılar</a
+      >
+    </li>
+    <li>
+      <a
+        #register
+        routerLink="/register"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Kayıt Ol
+      </a>
+    </li>
+  </ul>
+</nav>

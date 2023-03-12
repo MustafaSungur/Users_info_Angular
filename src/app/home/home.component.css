@@ -1,0 +1,64 @@
+.card {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1rem;
+  background-color: #eeeeee;
+  padding: 0;
+  border: 1px solid #ec3c01;
+}
+.img {
+  height: 100%;
+  width: 100%;
+}
+.img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+li {
+  background-color: #eeeeee;
+}
+
+.spinner-grow.text-danger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.delete-user {
+  top: 5px;
+  right: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 111;
+  border: none;
+  background-color: rgba(223, 46, 56, 0.8);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.delete-all {
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 111;
+  border: none;
+  background-color: rgba(223, 46, 56, 0.8);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3rem;
+  width: 14rem;
+  margin-bottom: 2rem;
+}
+.delete-all:hover,
+.delete-user:hover {
+  background-color: red;
+}
+.container {
+  position: relative;
+  margin-bottom: 5rem;
+}

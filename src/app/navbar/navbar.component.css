@@ -1,0 +1,31 @@
+li {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+a:hover {
+  border-color: #000;
+}
+.active {
+  border-color: #ec3c01;
+}
+ul {
+  display: flex;
+  gap: 50px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: transparent;
+  height: 6rem;
+  font-family: "Bai Jamjuree", sans-serif;
+}

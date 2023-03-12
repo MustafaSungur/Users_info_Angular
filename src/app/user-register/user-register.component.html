@@ -1,0 +1,98 @@
+<div class="wrap">
+  <div class="container">
+    <form #form="ngForm" (ngSubmit)="saveUser(form)">
+      <h4 class="title">Kayıt Ol</h4>
+      <div *ngIf="error" class="error">
+        {{ error }}
+      </div>
+      <ul>
+        <li>
+          <label for="name">İsim</label>
+          <input
+            class="input"
+            required
+            minlength="3"
+            [(ngModel)]="model.name"
+            type="text"
+            name="name"
+            id="name"
+            #name="ngModel"
+            placeholder="En az 3 Karakter Giriniz"
+          />
+          <div class="error" *ngIf="name.invalid && name.touched">
+            İsim en az 3 karakter olmalıdır
+          </div>
+        </li>
+        <li>
+          <label for="email">Email</label>
+          <input
+            class="input"
+            required
+            [(ngModel)]="model.email"
+            type="email"
+            name="email"
+            id="email"
+            #email="ngModel"
+            placeholder="xxx@xx"
+          />
+          <div class="error" *ngIf="email.invalid && email.touched">
+            Gerekli
+          </div>
+        </li>
+        <li>
+          <label for="phone">Telefon</label>
+          <input
+            class="input"
+            required
+            minlength="10"
+            maxlength="10"
+            [(ngModel)]="model.phone"
+            #phone="ngModel"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="(5xx)xxxxxxx"
+          />
+          <div class="error" *ngIf="phone.invalid && phone.touched">
+            Gerekli
+          </div>
+        </li>
+        <li>
+          <label for="password">Parola</label>
+          <input
+            class="input"
+            required
+            minlength="5"
+            [(ngModel)]="model.password"
+            #password="ngModel"
+            type="text"
+            name="password"
+            id="password"
+            placeholder="En Az 5 Karakter Giriniz"
+          />
+          <div class="error" *ngIf="password.invalid && password.touched">
+            Parola en az 5 karakter olmalıdır
+          </div>
+        </li>
+        <li>
+          <label for="photo">Profil Resmi</label>
+          <input
+            type="file"
+            required
+            [(ngModel)]="model.photo"
+            #photo="ngModel"
+            name="photo"
+            id="photo"
+          />
+
+          <div class="error" *ngIf="photo.invalid && photo.touched">
+            Gerekli
+          </div>
+        </li>
+        <li>
+          <button type="submit" class="btn">Kaydet</button>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>

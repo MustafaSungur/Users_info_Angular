@@ -1,0 +1,93 @@
+.mb-3 {
+  margin-bottom: 40px;
+}
+.wrap {
+  height: 100%;
+  width: 100%;
+
+  color: #000;
+}
+.container {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ec3c01;
+  background-color: transparent;
+  background: blur(8px);
+  border-radius: 8px;
+}
+.input {
+  border: none;
+  border-bottom: 2px solid #000;
+  color: #000;
+  background: transparent;
+  outline: none;
+  font-size: 1.2rem;
+  width: 20rem;
+  transition: all 0.3s;
+}
+input:focus {
+  border-bottom-color: #ec3c01;
+}
+
+label {
+  font-size: 1.2rem;
+}
+.btn {
+  border: 1px solid #ec3c01;
+  background-color: transparent;
+  padding: 10px 30px;
+  text-align: 1rem;
+  border-radius: 10px;
+  color: #ec3c01;
+  margin-left: 20rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+  background-color: #ec3c01;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 2rem;
+
+  padding: 5px;
+}
+li input {
+  margin-left: 2rem;
+}
+ul {
+  padding: 4px;
+  margin: 0;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #ec3c01;
+  margin-bottom: 0;
+}
+
+.input.ng-touched.ng-invalid {
+  border-color: red;
+}
+
+.input.ng-dirty.ng-valid {
+  border-color: #41a948 !important;
+}
