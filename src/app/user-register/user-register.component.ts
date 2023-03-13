@@ -29,6 +29,7 @@ export class UserRegisterComponent implements OnInit {
     if (form.valid) {
       this.service.createUser(user).subscribe((data) => {
         alert('Kullanıcı Oluşturuldu');
+        this.router.navigate(['/']);
       });
     } else {
       this.error = 'Formu kontrol ediniz !';
